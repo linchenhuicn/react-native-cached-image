@@ -6,19 +6,15 @@ This package is greatly inspired by [@jayesbe](https://github.com/jayesbe)'s ama
 
 ## Installation
 
-    npm install react-native-cached-image --save
-    - or -
-    yarn add react-native-cached-image
+    1. With autolinking (react-native 0.60+)
+    
+        `cd ios && pod install`
+        
+    2. Pre react-native 0.60
+    
+        `$ react-native link react-native-swisseph`
 
-We use [`react-native-fetch-blob`](https://github.com/wkh237/react-native-fetch-blob#installation) to handle file system access in this package and it requires an extra step during the installation.  
 
-_You should only have to do this once._
-
-    react-native link react-native-fetch-blob
-
-Or, if you want to add Android permissions to AndroidManifest.xml automatically, use this one:
-
-    RNFB_ANDROID_PERMISSIONS=true react-native link react-native-fetch-blob
 
 ### Network Status - Android only
 Add the following line to your android/app/src/AndroidManifest.xml
